@@ -1,0 +1,57 @@
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+# VS Code
+.vscode/
+
+# .env is local settings, so should never be committed
+.env
+
+# keys
+id_rsa
+
+# cdk
+cdk.out
+
+# local configs
+*.env
+
+# Files to ignore
+**/1_*
+**/.idea
+**/.css
+**/*.iml
+**/.DS_Store
+**/.vscode
+**/.ipynb_checkpoints
+**/.travis.yml
+**/temp.yml
+**/Report.jtl
+**/.settings
+**/build/
+**/out/
+**/volumes/
+
+# python
+**/venv/
+**/bin/
+**/include/
+**/tmp/
+
+**/*.pyc
+**/*.egg
+**/*.egg-info
+**/dist/
+**/eggs/
+**/parts/
+**/var/
+**/sdist/
+**/develop-eggs/
+**/.installed.cfg
+**/lib64/
+**/__pycache__/
