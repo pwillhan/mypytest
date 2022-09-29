@@ -4,7 +4,6 @@ on: [push]
 
 jobs:
   build:
-    environment: PASSWORD
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -22,5 +21,7 @@ jobs:
           pip install pytest
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Test with pytest
+        env:
+          PASSWORD: ${{ secrets.PASSWORD }}
         run: |
           pytest
