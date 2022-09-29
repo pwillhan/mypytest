@@ -1,3 +1,5 @@
+import os
+
 import requests
 
 
@@ -16,3 +18,8 @@ def test_get_request():
     response = requests.request("GET", url, headers=headers, data=payload)
     print(response.text)
     assert response.status_code == 200
+
+
+def test_env_var_secrets():
+    password = os.environ["PASSWORD"]
+    assert password == 'abc123'
